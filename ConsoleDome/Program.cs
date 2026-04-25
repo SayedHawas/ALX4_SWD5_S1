@@ -22,6 +22,8 @@ namespace ConsoleDome
                 new person() { Id = 2, Name = "Jane" }
             };
 
+            //Modify Code 
+
             //people[0]
             //Anonymous Type
             var Employee = new { Id = 1, Name = "Ahmed", Job = "Developer" };
