@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="Message">Message:</label"><br>
+    <input type="text" id="Message" name="Message"><br>
+
+    <p id="para">
+
+    </p> 
+
+
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li id="listItem"></li>
+    </ul>
+    <br>
+    <button onclick="display('Message','para');"> Click Me To Edit Para </button>
+    <button onclick="display('Message','listItem');"> Click Me To Edit ItemList </button>
+
+     <button onclick="print('h1','Welcome To JavaScript')"> Click Me To Print </button>
+
+    <script>
+        function display(message,target){
+            // Get DOM element by id and change its content
+            var mes = document.getElementById(message).value;
+            document.getElementById(target).innerHTML=mes;
+        }
+
+        function print(tag, text) {
+            document.write("<" + print.arguments[0] + ">" + text + "</" + tag + ">");
+        }
+
+
+        function Factorial(Number)
+        {
+            if(Number<1)
+            return 0;
+            if(Number==1)
+                return 1;
+            else 
+                return Number * Factorial(Number-1);
+        }
+        console.log(Factorial(5));
+        
+    </script>
+</body>
+</html>

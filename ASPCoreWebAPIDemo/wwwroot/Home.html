@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="MyScript.js"></script>
+    <link rel="stylesheet" href="Css/Mystyle.css">
+    <style>
+        p{
+            color:blue;
+        }
+        </style>
+</head>
+<body>
+    <noscript>
+        <p>Please enable JavaScript to use this application.</p>
+    </noscript>
+
+    <form action="#" Method="post">
+        <label for="userName">UserName:</label"><br>
+        <input type="text" id="userName" name="userNames"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="passwords"><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <p style="color:red"> Welcome in HTML </p>
+
+      <button onclick="alert('Welcome From Button')"> Click Me </button>
+    <script>
+        window.prompt("What is your script ? ", "HTML5,CSS3,JavaScript");
+        //    window.alert("Hello World! From Body  ");
+        const name = "ALX4_SWD5_S1";
+        console.log(name);
+        
+        var x = 10;
+        console.log(x , typeof(x));
+        var x = "ahmed";
+        console.log(x , typeof(x));
+
+        //let y = 20;
+        // console.log(y , typeof(y));
+        //  y = "ahmed";
+        // console.log(y , typeof(y));
+
+
+        var colorArr= new Array();
+        colorArr[0]="red";
+        colorArr[1]="yellow";
+        colorArr[2]="Blue";
+       //2-   
+        var colorArr= new Array(3);
+        colorArr[0]="red";
+        colorArr[1]="yellow";
+        colorArr[2]="Blue";
+       //3-
+       var colorArry = ["red","yellow","blue"];
+
+      //  for access to elemet 
+      //1- to assign 
+       colorArr[2]="Black";
+
+        //2-to read
+        console.log(colorArr[1]);
+
+            var arr = new Array(4);
+            arr[0] = "sayed";
+            arr[1] = 50;
+            arr[2] = new Array("sayed", "Maryim", "retaj");
+            arr[3] = false;
+            arr[6] = "Welcome ";
+
+             delete arr[3];
+            console.log(arr[2][1]) ;
+
+
+
+        var y = 10;
+        var x = 20;
+        var z = true;
+        document.write("Comparison Operators" + "<br/>");
+        document.write("-------------------- " + "<br/>");
+         z = x > y;
+        document.write("> " + z + "<br/>");
+         z = x < y;
+        document.write("< " + z + "<br/>");
+         z = x >= y;
+        document.write(">= " + z + "<br/>");
+         z = x <= y;
+         document.write("<= " + z + "<br/>");
+        document.write("=============================== " + "<br/>");
+         y = 20;
+         z = x == y;
+         document.write("== " + z + "<br/>");
+         z = x === y;
+         document.write("=== " + z + "<br/>");
+         document.write("=== " + z + "<br/>");
+         document.write("=============================== " + "<br/>");
+         y = '20';
+         z = x == y;
+         document.write("== " + z + "<br/>"); //true
+         z = x === y;
+         document.write("=== " + z + "<br/>");
+
+
+
+         var Number = 10;
+         Number += 5;
+
+
+         document.write("Conditional Expression Ternary" + "<br/>");
+         document.write("------------------------------" + "<br/>");
+         var v1 = 15;
+         var v2 = 6;
+         var max = (v1 > v2) ? v1 : v2;
+         document.write("Max is : " + max);
+
+        debugger;
+        document.write("============== For IN ==================" + "<br/>"   );  
+        var arr = [77,55,66,12,44];
+        arr.sort(); // ---Method 
+        arr.length; // ---Properity
+        arr.reverse();
+        document.write(arr.toString());  // string , string , string ,
+        
+        for(var i in arr)
+        {
+            document.write("index : " +  i );  //index
+            document.write(" value  " + arr[i] + "<br />"); // Value 
+        }
+
+    </script>
+</body>
+</html>
