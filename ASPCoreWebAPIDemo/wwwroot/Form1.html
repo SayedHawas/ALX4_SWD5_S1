@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form>
+        Name : <input type="text" name="txtname" id="txt1" > <br/>
+        Age : <input type="number" name="txtAge" id="txt2"  onfocus="validationText('txt1')" >
+    </form>
+
+
+    <script>
+        function validationText(target){
+             var t = document.getElementById(target);
+             if(t.value==0 || t.value == null)
+             {
+                 alert('Must Enter Name');
+                 t.focus();
+                 return false;
+             }
+             else{
+                return true;
+             }
+
+
+        }
+    </script>
+</body>
+</html>

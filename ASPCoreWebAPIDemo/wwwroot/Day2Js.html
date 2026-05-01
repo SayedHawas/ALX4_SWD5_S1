@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+        <script>
+            //Normal Method 
+            function  NetSalary(salary, overtime)
+            {
+                return salary + overtime ;
+            }
+            //anonymous Method 
+            var Salary = function(salary, bouns)
+            {
+              return salary + bouns;
+            }
+
+            console.log('Salary : ' , Salary(15000,500));
+
+            // Exception Handling  (Handling Error)
+            //-------------------------------------
+            // Try  Catch Finaly
+            // NaN Not A Number 
+            try 
+            {
+                //Code 
+                var x = 10 , y = 0 ;
+                var z = x/y;
+                console.log(z)
+                if(y==0) throw "Can Not Dic By Zero";
+            }
+            catch(exception){
+                if(exception ="Can Not Dic By Zero")
+                    {
+                        console.log(exception);
+                        console.log ("Can Not Div By Zero")           
+                    }              
+                  // console.log ()
+            }
+
+            function SayHello(name)
+            {
+                try
+                {
+                   if(name == "")
+                        throw "Empty Parameter ...";
+                     if(name.length < 4 )
+                        throw "Short Length";
+                    console.log("Welcome : " , name);
+                }
+                catch(exception)
+                {
+                       if(exception == "Empty Parameter ...")
+                       console.log("Can Not Entery Name With Empty string ...");
+                }
+            }
+
+            SayHello("");
+            SayHello("Ahmed Ali ")
+             try{
+                var arr  ;
+                for (var i = 0; i <10; i++) {
+                   console.log(arr[i]);  
+                }
+                }
+                catch(ex)
+                {
+                  console.log(ex)
+                }
+
+           //Class     
+           //Normal Class
+           //Sealed Class
+           //Abstract Class
+           //Partial Class
+           //Netsed Class (Inner Class) 
+           //static Class
+           //Interface  100
+           //Struct 
+           //Record 
+           //Generic <T>
+
+
+
+            //Base Object 
+            var Employee = new Object();
+            Employee.ID = 1 ;
+            Employee.Name = "Ahmed";
+            Employee.Job = "Full Stack Developer ";
+            console.log("ID : " , Employee.ID ," Name : " , Employee.Name) ;
+
+            
+            var Client = {
+                   Name : "Tammer",
+                   Salary : 5000,
+                   Address : "Alex",
+                   netSalary : function()
+                   { 
+                      return  Salary + 1000;
+                   }
+            };
+
+            console.log(Client.Address);
+            for(var i in Client)
+            {
+                console.log("Field : " , i , " = " , Client[i] )
+
+            }
+             console.log("-----------------------")
+
+            Client.Job = "Developer";
+
+            for(var i in Client)
+            {
+                console.log("Field : " , i , " = " , Client[i] )
+
+            }
+
+             console.log("-----------------------")
+            delete Client.Address;
+            for(var i in Client)
+            {
+                console.log("Field : " , i , " = " , Client[i] )
+
+            }
+
+            var bool = "Address" in Client ;
+            console.log(bool);
+
+
+
+             //Object in JavasScript 
+         var Employee = new Object();  // Object (O) upper case 
+         Employee.ID = 1;
+         Employee.Name = "Sayed";
+         Employee.Salary = 3000;
+
+         //Object in JavasScript 
+         var Manager = new Object();  // Object (O) upper case 
+         Manager.ID = 1;
+         Manager.Name = "Sayed";
+         Manager.Salary = 3000;
+
+            var bo = Employee == Manager;
+            console.log(bo)
+
+            var Employee2 = Manager;
+
+            var boo = Employee2 == Manager;
+            console.log(boo)
+
+            var b2 = Manager.ID == Employee.ID 
+            console.log(b2)
+
+            //Object build-in 
+        //1-Array Object 
+        //Properties : Length
+        //Method     : sort()  ,  reverse()
+
+     // 2-Date Object 
+    //   getDate()        //Date
+    //   getDay()         //Day in Week 
+    //   getHoures()
+    //   getMinutes()
+    //   getyear()
+      //Date()           //Object Date
+
+        //(year,Month,day,hours);
+        var d = new Date(2026,5,1);
+        console.log(d.getDay());
+        console.log(d.getFullYear());
+        </script>
+
+
+
+
+</body>
+</html>
