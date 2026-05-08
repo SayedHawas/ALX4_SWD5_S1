@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppDemo", "WinForms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQDemos", "LINQDemos\LINQDemos.csproj", "{9E6BB9EE-917D-45C3-85EF-3BDA51E03EAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPCoreWebAPI2Demo", "ASPCoreWebAPI2Demo\ASPCoreWebAPI2Demo.csproj", "{32D097D9-6086-4D7E-B64C-75A2E797D667}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9E6BB9EE-917D-45C3-85EF-3BDA51E03EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E6BB9EE-917D-45C3-85EF-3BDA51E03EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E6BB9EE-917D-45C3-85EF-3BDA51E03EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D097D9-6086-4D7E-B64C-75A2E797D667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D097D9-6086-4D7E-B64C-75A2E797D667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D097D9-6086-4D7E-B64C-75A2E797D667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D097D9-6086-4D7E-B64C-75A2E797D667}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
